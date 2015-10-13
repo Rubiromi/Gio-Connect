@@ -1,0 +1,37 @@
+nav.navbar.navbar-default.navbar-fixed-top
+  .container-fluid
+    .navbar-header
+      button.navbar-toggle.collapsed type="button" data-toggle="collapsed" data-target="#main-gg-navbar" aria-expanded="false"
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      /= link_to image_tag('white_logo.png'), root_path, class: 'navbar-brand'
+      = link_to "Gio Connect", root_path, class: 'navbar-brand'
+
+    #main-gg-navbar.collapse.navbar-collapse
+      ul.nav.navbar-nav
+        li.active
+          = link_to 'Home', root_path
+        li
+          = link_to 'Wellness', root_path
+        li
+          = link_to 'Support', root_path
+        li
+          = link_to 'Donate', root_path
+        li
+          = link_to 'Event', root_path
+        li
+          = link_to 'About', root_path
+
+      = form_tag root_path, class: 'navbar-form navbar-left', role: 'search'
+        .input-group
+          = text_field_tag 'search', nil, class: 'form-control', placeholder: 'Search'
+          span.input-group-btn
+            button.btn.btn-default type="submit"
+              i.fa.fa-search
+
+      ul.nav.navbar-nav.navbar-right
+        li
+          = link_to 'ASL Lifeline', root_path
+
