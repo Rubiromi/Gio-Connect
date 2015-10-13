@@ -1,5 +1,13 @@
 source 'https://rubygems.org'
 
+source 'https://rails-assets.org' do
+	gem 'rails-assets-bootstrap', '3.3.5'
+	gem 'rails-assets-font-awesome', '4.3.0'
+	gem 'rails-assets-jquery', '2.1.4'
+	gem 'rails-assets-jquery-ujs', '1.0.4'
+end
+
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
