@@ -16,6 +16,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'pg'
 gem 'puma'
 gem 'sass-rails', '~> 5.0'
+gem 'slim'
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 
